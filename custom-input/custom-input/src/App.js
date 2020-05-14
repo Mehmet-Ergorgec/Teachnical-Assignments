@@ -1,35 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import SearchBar from './components/search-bar/SearchBar';
+import SearchBar from './components/Searchbar/SearchBar';
+import { data } from './data/users';
+import Users from './components/Users/Users';
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      search: '',
-    };
-  }
+function App() {
+  const [searchText, setSearchText] = useState('');
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  handleChange = (event) => {
-    const { value, name } = event.target;
-    console.log(value);
-    this.setState({ [name]: value });
+  const handleChange = (event) => {
+    const { value } = event.target;
+    setSearchText(value);
   };
 
-  render() {
-    return (
-      <div className='search-bar-wrapper'>
-        <form>
-          <SearchBar
-            name='search'
-            type='text'
-            handleChange={this.handleChange}
-            value={this.state.search}
-            label='Contact'
-            placeholder='Type or search...'
-          />
-        </form>
-      </div>
-    );
-  }
+  const handleInputClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  const users = data.filter((user) => {
+    if (user.name === null) {
+      return 'No user found';
+    }
+    return user.name.toLowerCase().includes(searchText.toLowerCase());
+  });
+
+  const handleUserClick = (username) => {
+    setSearchText(username);
+    setShowDropdown(!showDropdown);
+  };
+
+  return (
+    <div className='search-bar-wrapper'>
+      <SearchBar
+        name='search'
+        value={searchText}
+        label='Contact'
+        placeholder='Type or search...'
+        handleChange={handleChange}
+        handleInputClick={handleInputClick}
+      />
+      {showDropdown && <Users data={users} handleUserClick={handleUserClick} />}
+    </div>
+  );
 }
+
+export default App;

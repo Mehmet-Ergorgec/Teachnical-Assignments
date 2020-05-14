@@ -1,7 +1,12 @@
 .search-bar-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
-  min-height: 100vh;
+  padding: 10rem;
+  background-color: indigo;
+  /* position: absolute; */
+  /* margin: 0 auto; */
+  /* min-height: 100vh; */
+  /* min-width: 100vh; */
 }
