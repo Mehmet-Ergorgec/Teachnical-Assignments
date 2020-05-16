@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Teachnical-Assignment/static/css/main.23f047dd.chunk.css",
+    "main.js": "/Teachnical-Assignment/static/js/main.1ad4f66a.chunk.js",
+    "main.js.map": "/Teachnical-Assignment/static/js/main.1ad4f66a.chunk.js.map",
+    "runtime-main.js": "/Teachnical-Assignment/static/js/runtime-main.c077464f.js",
+    "runtime-main.js.map": "/Teachnical-Assignment/static/js/runtime-main.c077464f.js.map",
+    "static/js/2.2e5307f3.chunk.js": "/Teachnical-Assignment/static/js/2.2e5307f3.chunk.js",
+    "static/js/2.2e5307f3.chunk.js.map": "/Teachnical-Assignment/static/js/2.2e5307f3.chunk.js.map",
+    "index.html": "/Teachnical-Assignment/index.html",
+    "precache-manifest.368fabb304b8bf5d9a1680d95ada5a31.js": "/Teachnical-Assignment/precache-manifest.368fabb304b8bf5d9a1680d95ada5a31.js",
+    "service-worker.js": "/Teachnical-Assignment/service-worker.js",
+    "static/css/main.23f047dd.chunk.css.map": "/Teachnical-Assignment/static/css/main.23f047dd.chunk.css.map",
+    "static/js/2.2e5307f3.chunk.js.LICENSE.txt": "/Teachnical-Assignment/static/js/2.2e5307f3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Teachnical-Assignment/static/media/background.58764f00.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c077464f.js",
+    "static/js/2.2e5307f3.chunk.js",
+    "static/css/main.23f047dd.chunk.css",
+    "static/js/main.1ad4f66a.chunk.js"
+  ]
+}
